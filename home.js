@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{const p=PTG.products();PTG.renderCards('#newProducts',[...p].sort((a,b)=>b.created-a.created).slice(0,4));PTG.renderCards('#bestProducts',[...p].filter(x=>x.stock>0).sort((a,b)=>b.price-a.price).slice(0,4));});
